@@ -1,0 +1,14 @@
+El estado del entorno está representado por una serie de variables continuas que describen la posición y velocidad de cada articulación del humanoide, así como otras características del cuerpo como el ángulo de las articulaciones y la posición en el espacio. Se trabaja con hasta **45 variables de estado**, que nos dan una idea de la situación del humanoide.
+
+La recompensa está diseñada para incentivar al humanoide a caminar de manera estable y eficiente, avanzando en la dirección deseada.
+
+- **Recompensa por salud**: Cada vez que el humanoide está vivo, recibe una recompensa de valor fijo llamada healthy_reward.
+- **Recompensa por caminar hacia adelante**: Esta recompensa será positiva si el humanoide camina hacia adelante (en la dirección positiva del eje x).
+- **Recompensa por control**: Una recompensa negativa para penalizar al humanoide si la fuerza de control es demasiado grande.
+- **Recompensa por contacto**: Una recompensa negativa para penalizar al humanoide si la fuerza de contacto externa es demasiado grande
+
+El cálculo de la recompensa total es *reward = healthy_reward + forward_reward - ctrl_cost - contact_cost*
+
+Las acciones disponibles son continuas y corresponden a los torques aplicados a las diferentes articulaciones del humanoide. El espacio de acción es de alta dimensionalidad, con cada acción representando el torque aplicado a una articulación específica. En total nos encontramos con **17 acciones** con valores posibles entre *-0.4* y *0.4*
+
+El episodio termina si el humanoide cae al suelo. También puede terminar si se alcanza el número máximo de timesteps (1000) en un episodio.

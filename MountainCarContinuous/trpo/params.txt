@@ -1,0 +1,6 @@
+[('n_envs', 2),
+             ('n_timesteps', 500000),
+             ('normalize', True),
+             ('policy', 'MlpPolicy'),
+             ('sde_sample_freq', 4),
+             ('use_sde', True)]

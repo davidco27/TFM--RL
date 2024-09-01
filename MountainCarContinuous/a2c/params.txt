@@ -1,0 +1,12 @@
+[('learning_rate',0.0007), 
+             ('n_steps',5), 
+             ('gamma',0.99),
+	     ('ent_coef', 0.0),
+             ('n_envs', 4),
+             ('n_steps', 100),
+             ('n_timesteps', 500000.0),
+             ('normalize', True),
+             ('policy', 'MlpPolicy'),
+             ('policy_kwargs', 'dict(log_std_init=0.0, ortho_init=False)'),
+             ('sde_sample_freq', 16),
+             ('use_sde', True)]

@@ -1,0 +1,12 @@
+El estado del entorno se describe mediante un vector continuo de dos dimensiones que contiene la posición y la velocidad del coche.
+
+- **Posición** (*x*): Varía entre *-1.2* y *0.6*.
+- **Velocidad** (*v*): Varía entre *-0.07* y *0.07*.
+
+La recompensa está diseñada para incentivar al agente a alcanzar la cima de la colina derecha lo más rápido posible. El agente recibe una recompensa de 100 al alcanzar la posición 0.5 o superior, que es la meta, y se penaliza con una pequeña penalización en cada paso (-0.1) para desalentar movimientos innecesarios.
+
+Las acciones disponibles son continuas y representan la fuerza aplicada al coche. Esta fuerza puede ser positiva (acelerar hacia la derecha) o negativa (acelerar hacia la izquierda).
+
+- **Aceleración** (*a*): Un valor continuo que varía entre *-1* y *1*.
+
+El episodio termina si la posición del coche es mayor o igual a 0.5 (meta alcanzada).El episodio también termina si el agente no alcanza la meta en un máximo de 200 pasos.

@@ -1,0 +1,15 @@
+El estado del entorno se describe mediante una matriz de píxeles que representan una vista aérea de la pista y el coche, lo que convierte el problema en uno de percepción visual y control continuo. La observación es una imagen RGB de dimensiones **96x96 píxeles**.
+
+La recompensa está diseñada para incentivar al agente a seguir la pista de manera eficiente y rápida. El agente puede recibir:
+
+- **Recompensa por avanzar**: Se otorgan pequeñas recompensas por cada segmento de pista avanzado. Esto anima al agente a intentar ir lo más rápido posible y manteniendo el coche en pista.
+
+- **Penalización por salirse de la pista**: Se aplica una penalización cuando el coche sale de la pista, lo que desalienta el comportamiento subóptimo.
+
+Las acciones disponibles son continuas y representan los comandos de control del coche, incluyendo la dirección del volante, la aceleración y el freno.
+
+- **Dirección del volante** (*steer*): Un valor continuo que varía entre *-1* (giro completo a la izquierda) y *1* (giro completo a la derecha).
+- **Aceleración** (*gas*): Un valor continuo que varía entre *0* y *1*.
+- **Freno** (*brake*): Un valor continuo que varía entre *0* y *1*.
+
+El episodio termina si el agente completa un giro de la pista. El episodio también puede terminar si el coche se sale de la pista durante un período prolongado o si se supera un número máximo de pasos.

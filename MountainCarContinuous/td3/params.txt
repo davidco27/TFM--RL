@@ -1,0 +1,4 @@
+[('n_timesteps', 500000),
+ ('noise_std', 0.5),
+ ('noise_type', 'ornstein-uhlenbeck'),
+ ('policy', 'MlpPolicy')]

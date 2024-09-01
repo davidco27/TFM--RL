@@ -1,0 +1,1 @@
+El entorno HalfCheetah consiste en un agente en forma de mitad de guepardo que debe aprender a correr lo más rápido posible hacia adelante. Este entorno es ideal para estudiar el control locomotor en sistemas articulados debido a su alta complejidad. Forma parte de un grupo de entornos dentro de MujoCo.

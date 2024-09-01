@@ -1,0 +1,17 @@
+[('batch_size', 256),
+             ('clip_range', 0.3),
+             ('ent_coef', 0.00238306),
+             ('gae_lambda', 0.9),
+             ('gamma', 0.95),
+             ('learning_rate', 3.56987e-05),
+             ('max_grad_norm', 2),
+             ('n_envs', 1),
+             ('n_epochs', 5),
+             ('n_steps', 512),
+             ('n_timesteps', 500000.0),
+             ('normalize', True),
+             ('policy', 'MlpPolicy'),
+             ('policy_kwargs',
+              'dict( log_std_init=-2, ortho_init=False, activation_fn=nn.ReLU, '
+              'net_arch=dict(pi=[256, 256], vf=[256, 256]) )'),
+             ('vf_coef', 0.431892)]

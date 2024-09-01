@@ -1,0 +1,11 @@
+El estado del entorno está representado por una serie de variables continuas que describen la posición, velocidad y ángulos de las articulaciones del HalfCheetah. Las **17 observaciones** incluyen la posición del torso, las posiciones y velocidades de cada segmento de las patas, y otras características dinámicas del cuerpo como los ángulos.
+
+La recompensa tiene 2 componentes principales:
+- **Recompensa por velocidad hacia adelante**: Se mide como la diferencia en la posición x del centro de masa del HalfCheetah entre pasos de tiempo. Instiga al agente a avanzar lo más rápido posible por el eje x.
+- **Recompensa por control**: Una recompensa negativa que penaliza por el uso excesivo de fuerzas de control. Se mide como el cuadrado de los torques aplicados a las articulaciones.
+
+La recompensa total es calculada como *reward = forward_reward - ctrl_cost*
+
+Las acciones disponibles son continuas y corresponden a los torques aplicados a las diferentes articulaciones del humanoide. Estamos hablando de **6 acciones** distintas correspondiendo cada una a una articulación. Pueden tomar valores entre *-1* y *1*.
+
+El episodio termina si se alcanza el número máximo de pasos permitido (1000). En este caso no hay terminación por caída, debido al diseño del agente.

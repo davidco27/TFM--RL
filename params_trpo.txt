@@ -1,0 +1,1 @@
+[('learning_rate', 0.001), ('n_steps', 2048), ('batch_size', 128), ('gamma', 0.99),('policy','CnnPolicy')]

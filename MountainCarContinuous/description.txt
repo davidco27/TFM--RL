@@ -1,0 +1,2 @@
+El entorno MountainCarContinuous de Gymnasium simula un coche situado en un valle entre dos colinas. El objetivo del agente, que en este caso es el coche, es llegar a la cima de la colina derecha. Sin embargo, la potencia del motor es insuficiente para subir directamente la colina desde una posición en reposo en el valle, lo que obliga al coche a tomar impulso y balancearse hacia adelante y hacia atrás para lograr alcanzar la cima.
+

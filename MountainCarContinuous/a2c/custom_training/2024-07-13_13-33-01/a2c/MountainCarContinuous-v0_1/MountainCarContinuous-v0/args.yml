@@ -1,0 +1,90 @@
+!!python/object/apply:collections.OrderedDict
+- - - algo
+    - a2c
+  - - conf_file
+    - null
+  - - device
+    - auto
+  - - env
+    - MountainCarContinuous-v0
+  - - env_kwargs
+    - null
+  - - eval_env_kwargs
+    - null
+  - - eval_episodes
+    - 5
+  - - eval_freq
+    - 10000
+  - - gym_packages
+    - []
+  - - hyperparams
+    - ent_coef: 0.1
+      gae_lambda: 1.0
+      gamma: 0.99
+      learning_rate: 0.0005
+      n_steps: 50
+      n_timesteps: 100000
+      policy: MlpPolicy
+      vf_coef: 0.5
+  - - log_folder
+    - C:\Users\david\Documents\TFM\Enviroments\MountainCarContinuous\a2c\custom_training\2024-07-13_13-33-01
+  - - log_interval
+    - -1
+  - - max_total_trials
+    - null
+  - - n_eval_envs
+    - 2
+  - - n_evaluations
+    - null
+  - - n_jobs
+    - 1
+  - - n_startup_trials
+    - 10
+  - - n_timesteps
+    - 100000
+  - - n_trials
+    - 500
+  - - no_optim_plots
+    - false
+  - - num_threads
+    - -1
+  - - optimization_log_path
+    - null
+  - - optimize_hyperparameters
+    - false
+  - - progress
+    - false
+  - - pruner
+    - median
+  - - sampler
+    - tpe
+  - - save_freq
+    - -1
+  - - save_replay_buffer
+    - false
+  - - seed
+    - 3964430760
+  - - storage
+    - null
+  - - study_name
+    - null
+  - - tensorboard_log
+    - ''
+  - - track
+    - false
+  - - trained_agent
+    - ''
+  - - truncate_last_trajectory
+    - true
+  - - uuid
+    - false
+  - - vec_env
+    - dummy
+  - - verbose
+    - 1
+  - - wandb_entity
+    - null
+  - - wandb_project_name
+    - sb3
+  - - wandb_tags
+    - []
